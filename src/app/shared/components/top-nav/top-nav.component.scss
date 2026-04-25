@@ -2,12 +2,16 @@
 @use '../../../styles/animations.scss' as *;
 
 .nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0.5rem 1rem;
-  gap: 1rem;
-  background-color: transparent;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    background-color: transparent;
+    width: 50%;
+    border-bottom: 1px solid $border-line;
+  }
 
   .nav-link {
     position: relative;

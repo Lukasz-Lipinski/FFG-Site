@@ -1,0 +1,27 @@
+<footer class="footer-wrapper">
+  <div class="container container-grid">
+    <div>
+      <h4>Social Media Links:</h4>
+      <div class="social-links">
+        @for (link of iconLinks; track link.to) {
+          <a [href]="link.to" [title]="link.label" target="_blank" rel="noopener">
+            <mat-icon [svgIcon]="link.icon" class="brand-icon"></mat-icon>
+          </a>
+        }
+      </div>
+    </div>
+    <div>
+      <h4>Partners Links:</h4>
+    </div>
+  </div>
+  <div>
+    <h4>FFG Contact Information</h4>
+  </div>
+  <div class="container container-grid">
+    <div class="logo-container">
+          <img [ngSrc]="logo" alt="Far From Grace - Logo" loading="eager" fill />
+    </div>
+    <p>Modern Deathcore / Modern Metal</p>
+    <p>Wrocław, Lower Silesia Poland</p>
+  </div>
+</footer>

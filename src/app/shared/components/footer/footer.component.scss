@@ -1,0 +1,47 @@
+@use '../../../styles/colors.scss' as *;
+
+.footer-wrapper {
+  display: flex;
+  padding: 1rem;
+  background-color: rgba($primary-dark, 0.8);
+  color: $text-muted;
+  justify-content: space-between;
+  padding: 4rem;
+  border-top: 2px solid $border-line;
+
+  .container {
+    .social-links {
+      display: flex;
+      gap: 1rem;
+
+      .brand-icon {
+        color: $text-muted;
+        border: 1px solid $border-line;
+        border-radius: 50%;
+        padding: 0.5rem;
+        transition:
+          color 0.3s,
+          border-color 0.3s;
+
+        &:hover {
+          color: $hover-glow;
+          border-color: $hover-glow;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.logo-container {
+  position: relative;
+  max-width: 15rem;
+  height: 100%;
+}
