@@ -1,0 +1,9 @@
+<div class="container container-grid">
+  <img src="./public/band.jpg" width="500px" height="auto"/>
+@for (musician of musician; track musician) {
+  <app-musican-card
+    [name]="musician.name"
+    [description]="musician.description"
+    [imageUrl]="musician.imgUrl"/>
+}
+</div>

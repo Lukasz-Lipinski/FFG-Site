@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@use './app/styles/colors.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:host {
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+}
+
+html {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/band.jpg');
+  background-size: cover;
+  color: $text-muted;
+}
