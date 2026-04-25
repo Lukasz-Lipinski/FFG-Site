@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { TopNavComponent } from '../top-nav/top-nav.component';
 import { RouterModule } from '@angular/router';
-import { Footer } from '../footer/footer';
+import { Footer } from '../footer/footer.component';
 
 @Component({
   selector: 'app-layout',
