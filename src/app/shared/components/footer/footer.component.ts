@@ -1,12 +1,11 @@
-import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit } from '@angular/core';
 import { IIconLink } from '../../models/nav.models';
 import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from "@angular/platform-browser";
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-footer',
-  imports: [NgOptimizedImage, MatIconModule],
+  imports: [MatIconModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -46,11 +45,11 @@ export class Footer implements OnInit {
 
   ngOnInit(): void {
     const brandIcons = ['instagram', 'facebook', 'spotify', 'youtube'];
-    
-    brandIcons.forEach(icon => {
+
+    brandIcons.forEach((icon) => {
       this.matIconRegistry.addSvgIcon(
         icon,
-        this.sanitizer.bypassSecurityTrustResourceUrl(`assets/brands/${icon}.svg`)
+        this.sanitizer.bypassSecurityTrustResourceUrl(`assets/brands/${icon}.svg`),
       );
     });
   }

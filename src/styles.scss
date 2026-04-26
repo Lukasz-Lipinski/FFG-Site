@@ -6,6 +6,7 @@
 @use '@angular/material' as mat;
 @use './app/styles/colors.scss' as *;
 @use './app/styles/animations.scss' as *;
+@use './app/styles/typography.scss' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 /* You can add global styles to this file, and also import other style files */
@@ -19,10 +20,13 @@ html {
   background:
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/band.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $primary-dark;
   color: $text-muted;
 
   body {
     margin: 0;
+    width: 100%;
   }
 }
 
