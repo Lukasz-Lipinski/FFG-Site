@@ -1,0 +1,15 @@
+$mobile-font-size: 1.25rem;
+$desktop-font-size: 1rem;
+
+$desktop-header-font-size: 1.1rem;
+$mobile-header-font-size: 1.25rem;
+
+.header {
+  font-size: $desktop-header-font-size;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: $mobile-header-font-size;
+  }
+}

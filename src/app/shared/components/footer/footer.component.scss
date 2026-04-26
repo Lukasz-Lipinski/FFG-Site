@@ -1,4 +1,5 @@
 @use '../../../styles/colors.scss' as *;
+@use '../../../styles/typography.scss' as *;
 
 .footer-wrapper {
   display: flex;
@@ -9,9 +10,27 @@
   padding: 4rem;
   border-top: 2px solid $border-line;
 
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    font-size: $mobile-font-size;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .container-info {
+    padding-bottom: 1rem;
+  }
+
+  .footer-links-container {
+    display: flex;
+    gap: 1rem;
+  }
+
   .container {
     .social-links {
       display: flex;
+      padding-top: 0.75rem;
       gap: 1rem;
 
       .brand-icon {
@@ -42,6 +61,6 @@
 
 .logo-container {
   position: relative;
-  max-width: 15rem;
+  max-width: 20rem;
   height: 100%;
 }
